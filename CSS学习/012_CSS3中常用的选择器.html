@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*伪类选择器*/	
+			/*指定第一个子标签p起作用(子标签1)*/
+			.div_1>p:first-child{
+				color: red;
+			}
+			/*指定最后一个子标签p起作用(子标签5)*/
+			.div_1>p:last-child{
+				color: #8A2BE2;
+			}
+			/*指定具体第几个子标签起作用(数字指定第几个)*/
+			.div_1>p:nth-child(2){
+				font-family: 黑体;
+				font-weight: bold;
+				color: magenta;
+			}
+			/*选择空元素的对象*/
+			.div_1>p:empty{
+				background-color: chartreuse;
+			}
+			/*间隔选择子标签对象颜色*/
+			.div_2>p:nth-child(even){
+				background-color: blue;
+			}
+			.div_2>p:nth-child(odd){
+				background-color: hotpink;
+			}
+			/*使用焦点，伪对象(相对于input这个标签对象)选择器*/
+			/*input:focus{
+				width: 200px;
+				height: 200px;
+			}
+			*/
+			input:checked{
+				width: 20px;
+				height: 20px;
+			}
+			/*before选择器是在修饰的对象之前添加内容*/
+			span:before{
+				content: "这部分内容由CSS插入";
+			}
+			/*after选择器是在修饰的对象之后添加内容*/
+			span:after{
+				content: url(img/1.jpg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="div_1">
+			<p>子标签1</p>
+			<p>子标签2</p>
+			<p>子标签3</p>
+			<p></p>
+			<p>子标签4</p>
+			<p>子元素5</p>
+		</div>
+		<hr />
+		<div class="div_2">
+			<p>子标签1</p>
+			<p>子标签2</p>
+			<p>子标签3</p>
+			<p>子标签4</p>
+			<p>子元素5</p>
+		</div>
+		<hr />
+		<!---通过获得焦点，使文本框被选择时变大，-->
+		<input type="text" name="" id="" />
+		<!--通过默认选择，使选想变化尺寸  变大-->
+		男：<input type="radio" name="sex" />
+		女：<input type="radio" name="sex" />
+		<hr />
+		<!--伪对象选择器before 和  after-->
+		<div id="div_3">
+			<span>伪标签before的作用</span>
+		</div>
+		
+	</body>
+</html>
+<!-- 这节课学得选择器，是对于子元素起作用(不对孙子辈、兄弟辈起作用)-->

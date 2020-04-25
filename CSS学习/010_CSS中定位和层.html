@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div_4{
+				width: 200px;
+				height: 200px;
+				background-color: black;
+				/*固定定位*/
+				position: static;	
+			}
+			#div_1{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				/*绝对定位，红色释放位置，绿色占用红色位置*/
+				position: absolute;
+				top: 300px;
+				left: 300px;
+				/*置于底层,数值越大,越越网上-1到+无穷*/
+				z-index: 1;
+				
+				
+				
+			}
+			#div_2{
+				width: 200px;
+				height: 200px;
+				background-color: green;
+				/*相对定位*/
+				position: relative;
+				top: 300px;
+				left: 300px;
+				z-index:-1;
+				
+			}
+			#div_3{
+				width: 200px;
+				height: 200px;
+				background-color: blueviolet;
+				/*固定定位*/
+				position: fixed;
+				top: 150px;
+				left: 150px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div_4">
+		<div id="div_1">
+			
+		</div>
+		<div id="div_2">
+		<div id="div_3">
+		
+			
+		</div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+	</body>
+</html>
+<!--
+	绝对定位：
+	absolute:定位离开之后，释放原来的位置，定位是基于外层父级标签的位置
+	
+	相对定位：
+	relative：定位离开之后，没有释放原来的位置， 基于原来的位置定位
+	
+	绝对定位：
+	fixed:始终是基于浏览器的左上角的定位，适合左广告
+	
+	默认定位i：
+	static:初始位置
+	
+	z-index 改变标签的层
+--》

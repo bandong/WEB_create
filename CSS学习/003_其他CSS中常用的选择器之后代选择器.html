@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style >
+			/*后代选择器，只要是包含在div以内的标签都叫后代，都可以用*/
+			div span{
+				color: red;
+				font-size: 29px;
+				font-style: initial;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>后代标签学习</span>
+			<p>
+				<span>
+					div的孙子代标签
+				</span>
+			</p>
+		</div>
+		<span>后代标签非div后代</span>
+	</body>
+</html>

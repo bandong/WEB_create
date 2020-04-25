@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div_1{
+				width: 200px;
+				height: 200px;
+				/*针对标签（div）背景的透明度演示*/
+				background-color: rgba(255,0,0,0.1);
+				/*只调整内容(字体)的透明度*/
+				color: rgba(0,0,255,0.3);
+				
+			}
+			.div_2{
+				width: 200px;
+				height: 200px;
+				background-color: rgb(255,0,0);
+				/*只调整内容(字体)的透明度*/
+				color: rgb(0,0,255);
+				/*针对所有颜色的透明度，不区分内容和背景*/
+				opacity: 0.3;
+			}
+			.div_3{
+				width: 200px;
+				height: 150px;
+				color: red;
+				background-color: #008000;
+				/*不让内容超出div框,可用hedden 和auto*/
+				/*overflow: auto;*/
+				overflow: hidden;
+			}
+			/*行内元素设置高度和宽度无效果*/
+			.span_1{
+				width: 100px;
+				height: 100px;
+				border: 1px solid red;
+			}
+			#span_2{
+				width: 100px;
+				height: 100px;
+				border: 1px solid red;
+				/*block 将行元素转换成块元素；inline 将块转化成行元素  none隐藏标签*/
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div_1">
+			演示背景和内容透明度属性（两个不同属性）
+		</div>
+		<div class="div_2">
+			演示同时作用内容和背景透明度的属性
+		</div>
+		<div class="div_3">
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+			不让字体显示超出div的范围
+		</div>
+		<span class="span_1">
+			这是一个行内元素,不能设置高度和宽度
+		</span>
+		<br />
+		<span id="span_2">
+			这是一个行内元素，但是转换成块元素可以设置宽和高
+		</span>
+	</body>
+</html>
+<!--
+	####行内元素和块内元素的属性可以互相转换####行内元素不能添加高度和宽度，但是一转换位块元素就可以加了。
+	行内元素：多个标签位于同一行，不用br不换行
+	span font 小标签    img  a
+	
+	块元素： 标签可以自当换行
+	div  p  h1-h6 ul frame等
+-->

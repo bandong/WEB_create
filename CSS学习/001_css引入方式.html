@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css引入方式</title>
+		<!--注意css注释的方式-->
+		<style>
+			/*内嵌方式,写到当前网页中,解决方式1的缺点,可以在相同标签名中引用*/
+			/*p是html标签名称*/
+			p{
+				/*字体大小*/
+				font-size: 29px;
+				/*字体加粗*/
+				font-weight: 200;
+				/*字体颜色*/
+				color: blueviolet;	
+			}
+		</style>
+		<!--方式【3】：外部引入式（链接式）-->
+		<link rel="stylesheet" href="css/001_css_style_import.css" />
+		<!--方式【4】: 导入式  不常用-->
+		<style>
+			@import url("css/001_css_style_import.css");
+		</style>
+	</head>
+	<body>
+		<!--方式【1】：行内样式 style式属性，color（键）：red（值）缺点：只能在同一个标签内，相同名称标签不可用，大量的复制-->
+		<p style="color: red;">css引入方式[1]学习！</p>
+		<p>css引入方式【2】【3】【4】学习！</p>
+		<p>css引入方式【2】【3】【4】学习！</p>
+	</body>
+</html>
+<!--注意：
+	css的特殊属性；
+		1:引入方式的顺序：就近原则，近指的是css引入的位置和要修饰的位置的代码位置，从上到下的代码行。先然：方式1》方式4>方式3>方式2 优先级
+		2：当多个css样式一起修饰一个标签的时候，是叠加效果。不是覆盖
+-->

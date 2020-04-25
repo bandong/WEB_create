@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*熟性选择器*/
+			/*通过属性type="text"来调整账号的样式*/
+			input[type=text]{
+				width: 200px;
+				height: 100px;
+			}
+			/*以什么属性开头*/
+			input[name^=form]{
+				background-color: aquamarine;
+			}
+			/*以什么属性结尾*/
+			input[name$=form]{
+				background-color: #000000;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p>账号：<input type="text" name="form_zh" /></p>
+		<p>密码：<input type="password" name="form_pw"/></p>
+		<p>邮箱：<input type="email" name="form_EM"/></p>
+		<p>年龄：<input type="number" name="num_form"/></p>
+	</body>
+</html>
+<!--
+	选择器的种类：
+	【1】基础类选择器
+		* id  class 标签（选择器）
+	【2】关系选择器
+		后代    子   兄弟   （选择器）
+	【3】 伪类选择器
+	    hover  .div_1>p:first-child(等)
+	【4】为对象选择器
+	 	after befor 
+	【6】属性选择器
+	    input[type=text]
+-->

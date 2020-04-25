@@ -1,0 +1,9 @@
+/*本CSS样式页面时统一布局*/
+/*清除各种标签的留白*/
+body,div,h1,h2,h3,h4,h5,h6,li,ol,ul{margin: 0px; padding: 0;}
+/*默认文字居中显示,字体大小14px*/
+body{text-align: center;font: 14px;}
+/*a标签不显示下划线*/
+a{text-decoration: none;}
+/*列表去除前面的空格*/
+li{list-style: none;}
